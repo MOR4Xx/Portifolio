@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Times, Times New Roman, serif;
+}
+
+body {
+    font-family: Times, Times New Roman, serif;
+    display: block;
+    background-color: #575656;
+}
+
+.menubar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 20px;
+    background-color: #ffffff;
+}
+
+.menu-nav {
+    text-align: right;
+    align-content: center;
+    height: 90px;
+    min-width: 100vh;
+    background-color: #ffffff;
+    align-items: center;
+}
+
+.menu-nav ul {
+    list-style-type: none;
+}
+
+.menu-nav ul li {
+    display: inline-block;
+}
+
+.menu-nav ul li a{
+    padding: 10px;
+}
+
+.menu-nav ul li a button{
+    text-align: center;
+}
+
+.menu-nav ul li a :hover{
+    border-radius: 10px;
+    background-color: #dfdede;
+}
+
+.button-menu i {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.button-menu {
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    height: 30px;
+    color: #005bab;
+    font-size: 16px;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.perfil img {
+    max-width: 70px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 100px;
+}
+
+.perfil p {
+    font-style: italic;
+    margin: 0;
+    font-size: 30px;
+    color: #005bab;
+}
+
+.conteudo-principal {
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6vw 3vw;
+    min-height: 200px;
+    max-height: 340px;
+    background: #575656 url(/img/backgroud1.jpeg) center/cover;
+}
+
+.nav-posters ul {
+    list-style-type: none;
+}
+
+.nav-posters ul li {
+    padding: 10px;
+    display: inline-block;
+}
+
+.site-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    margin: 0 0 0 -2px;
+    padding: 0;
+    font-size: 40px;
+    line-height: 1em;
+    font-weight: 600;
+    text-align: center;
+    color: #fbfbfb;
+}
+
+.site-title img {
+    max-height: 300px;
+    width: auto;
+    border-radius: 100px;
+    z-index: 2;
+    margin-bottom: 10px;
+}
+
+.subtilulo{
+    padding-top: 20px;
+    color: #fbfbfb;
+}
+
+.projetos{
+    display: flex;
+    justify-content: center;
+}
+
+.posters h3{
+    margin: 15px;
+}
+
+.posters p{
+    margin: 15px;
+}
+
+.posters img {
+    width: 100%;
+    margin: 0 auto;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.posters {
+    display: block;
+    width: 300px;
+    height: 500px;
+    border: none;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    min-width: 100vh;
+    background-color: #fbfbfb;
+    color: #005bab;
+    text-align: center;
+    padding: 15px;
+}
+

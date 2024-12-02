@@ -98,7 +98,7 @@ header img {
     padding: 6vw 3vw;
     min-height: 200px;
     max-height: 340px;
-    background: #575656 url(/img/backgroud1.jpeg) center/cover;
+    background: #575656 url(img/backgroud1.jpeg) center/cover;
 }
 
 .nav-posters ul {

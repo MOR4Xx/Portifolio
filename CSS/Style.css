@@ -36,15 +36,15 @@ body {
     display: inline-block;
 }
 
-.menu-nav ul li a{
+.menu-nav ul li a {
     padding: 10px;
 }
 
-.menu-nav ul li a button{
+.menu-nav ul li a button {
     text-align: center;
 }
 
-.menu-nav ul li a :hover{
+.menu-nav ul li a :hover {
     border-radius: 10px;
     background-color: #dfdede;
 }
@@ -101,16 +101,7 @@ header img {
     background: #575656 url(img/backgroud1.jpeg) center/cover;
 }
 
-.nav-posters ul {
-    list-style-type: none;
-}
-
-.nav-posters ul li {
-    padding: 10px;
-    display: inline-block;
-}
-
-.site-title {
+.apresentacao {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -125,7 +116,7 @@ header img {
     color: #fbfbfb;
 }
 
-.site-title img {
+.apresentacao img {
     max-height: 300px;
     width: auto;
     border-radius: 100px;
@@ -133,51 +124,235 @@ header img {
     margin-bottom: 10px;
 }
 
-.subtilulo{
+.subtilulo {
     padding-top: 20px;
     color: #fbfbfb;
 }
 
-.projetos{
+.nav-posters{
+    width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.posters h3{
-    margin: 15px;
+.nav-posters ul {
+    display: inline-flex;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.posters p{
-    margin: 15px;
+.nav-posters ul li {
+    padding: 10px;
+    display: inline-block;
 }
 
-.posters img {
-    width: 100%;
-    margin: 0 auto;
-    height: 200px;
-    object-fit: cover;
-    display: block;
+
+.projetos {
+    display: flex;
+    justify-content: center;
+
 }
 
 .posters {
     display: block;
     width: 300px;
     height: 500px;
-    border: none;
     background-color: white;
-    text-decoration: none;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
     color: black;
     border-radius: 10px;
     overflow: hidden;
+    transition: transform 0.3s ease;
+    text-align: center;
+    text-decoration: none;
 }
+
+.posters h3, .posters p {
+    margin: 15px;
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+.posters h3 {
+    font-size: 1.2em;
+    color: #005bab;
+}
+
+.posters p {
+    font-size: 1em;
+    line-height: 1.4;
+    color: #333333;
+}
+
+.posters img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.posters:hover {
+    transform: scale(1.05);
+}
+
 
 footer {
     position: relative;
     bottom: 0;
-    min-width: 100vh;
+    width: 100%;
     background-color: #fbfbfb;
     color: #005bab;
     text-align: center;
     padding: 15px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    color: #005bab;
+    cursor: pointer;
+}
+
+.menu-nav {
+    display: flex;
+    justify-content: end;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+#menu-toggle:checked ~ .menu-nav {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.menu-nav ul {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-nav ul li {
+    margin: 10px 0;
+}
+
+
+@media (max-width: 1100px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .menu-nav {
+        display: none;
+    }
+
+    #menu-toggle:checked ~ .menu-nav {
+        display: flex;
+    }
+
+    .menu-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-nav ul li {
+        margin: 10px 0;
+    }
+
+    .perfil {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .perfil img {
+        max-width: 50px;
+    }
+
+    .perfil p {
+        font-size: 24px;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+}
+
+@media (max-width: 728px) {
+    .apresentacao {
+        font-size: 28px;
+    }
+
+    .subtilulo {
+        font-size: 0.9rem;
+    }
+
+    .projetos {
+        gap: 10px;
+    }
+
+    .posters {
+        width: 90%;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 8px;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 480px) {
+    .perfil img {
+        max-width: 40px;
+    }
+
+    .perfil p {
+        font-size: 20px;
+    }
+
+    .menu-icon {
+        font-size: 1.8rem;
+    }
+
+    .apresentacao {
+        font-size: 22px;
+    }
+
+    .subtilulo {
+        font-size: 0.8rem;
+    }
+
+    .posters {
+        width: 100%;
+    }
+
+    footer {
+        font-size: 10px;
+        padding: 5px;
+    }
+}

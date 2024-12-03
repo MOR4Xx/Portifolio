@@ -129,10 +129,41 @@ header img {
     color: #fbfbfb;
 }
 
-.nav-posters{
+.projetos {
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding-bottom: 2vh;
+}
+
+.button-carrossel {
+    width: 2vw;
+    height: 10vh;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+.button-carrossel:hover {
+    transform: scale(1.05);
+
+}
+
+.button-carrossel:active{
+    transform: scale(1.10);
+    color: #ffffff;
+    background-color: #acacac;
+    
+}
+
+.nav-posters {
+    width: 70%;
+    display: flex;
+    justify-content: left;
     align-items: center;
     overflow-x: auto;
     white-space: nowrap;
@@ -155,16 +186,9 @@ header img {
     display: inline-block;
 }
 
-
-.projetos {
-    display: flex;
-    justify-content: center;
-
-}
-
 .posters {
     display: block;
-    width: 300px;
+    width: 500px;
     height: 500px;
     background-color: white;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
@@ -176,22 +200,27 @@ header img {
     text-decoration: none;
 }
 
-.posters h3, .posters p {
-    margin: 15px;
-    word-wrap: break-word;
-    word-break: break-word;
-    overflow-wrap: break-word;
+.conteudo-posters {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
 }
 
-.posters h3 {
+
+.conteudo-posters h3 {
+    margin: 15px;
     font-size: 1.2em;
     color: #005bab;
+    max-width: 100%;
 }
 
-.posters p {
+.conteudo-posters p {
+    margin: 15px;
     font-size: 1em;
     line-height: 1.4;
     color: #333333;
+    max-width: 100%;
 }
 
 .posters img {
@@ -209,7 +238,7 @@ header img {
 footer {
     position: relative;
     bottom: 0;
-    width: 100%;
+    max-width: 100%;
     background-color: #fbfbfb;
     color: #005bab;
     text-align: center;

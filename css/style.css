@@ -258,18 +258,15 @@ header img {
 }
 
 
-footer {
-    position: relative;
-    bottom: 0;
-    max-width: 100%;
-    background-color: #fbfbfb;
-    color: #005bab;
-    text-align: center;
-    padding: 15px;
-    font-size: 16px;
+footer{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    bottom: 0;
+    left: 0;
+    height: 5vh;
+    background-color: #888888;
+    color: #005bab;
 }
 
 .menu-icon {

@@ -1,404 +1,425 @@
+/* Reset básico */
 * {
-    margin: 0;
-    padding: 0;
-    font-family: Times, Times New Roman, serif;
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove espaçamentos padrão */
+    font-family: Times, Times New Roman, serif; /* Define a fonte padrão */
 }
 
+/* Estilização do corpo da página */
 body {
-    font-family: Times, Times New Roman, serif;
-    display: block;
-    background-color: #575656;
+    font-family: Times, Times New Roman, serif; /* Fonte padrão */
+    display: block; /* Exibe o corpo como bloco */
+    background-color: #575656; /* Define fundo cinza escuro */
 }
 
+/* Barra de menu superior */
 .menubar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100px;
-    padding: 0 20px;
-    background-color: #ffffff;
+    justify-content: space-between; /* Espaçamento entre os itens */
+    align-items: center; /* Alinhamento vertical centralizado */
+    height: 100px; /* Altura fixa */
+    padding: 0 20px; /* Espaçamento interno nas laterais */
+    background-color: #ffffff; /* Fundo branco */
 }
 
+/* Navegação principal */
 .menu-nav {
-    text-align: right;
+    text-align: right; /* Texto alinhado à direita */
     align-content: center;
-    height: 90px;
-    min-width: 100vh;
-    background-color: #ffffff;
+    height: 90px; /* Altura fixa */
+    min-width: 100vh; /* Largura mínima para ocupar a tela */
+    background-color: #ffffff; /* Fundo branco */
     align-items: center;
 }
 
+/* Lista de navegação */
 .menu-nav ul {
-    list-style-type: none;
+    list-style-type: none; /* Remove estilo de lista padrão */
 }
 
+/* Itens da lista de navegação */
 .menu-nav ul li {
-    display: inline-block;
+    display: inline-block; /* Itens exibidos em linha */
 }
 
+/* Links no menu */
 .menu-nav ul li a {
-    padding: 10px;
+    padding: 10px; /* Espaçamento interno */
 }
 
+/* Botões nos links */
 .menu-nav ul li a button {
-    text-align: center;
+    text-align: center; /* Texto centralizado */
 }
 
+/* Estilo ao passar o mouse nos links */
 .menu-nav ul li a :hover {
-    border-radius: 10px;
-    background-color: #dfdede;
+    border-radius: 10px; /* Bordas arredondadas */
+    background-color: #dfdede; /* Fundo cinza claro */
 }
 
+/* Ícones nos botões */
 .button-menu i {
-    margin-right: 8px;
-    font-size: 18px;
+    margin-right: 8px; /* Espaçamento à direita do ícone */
+    font-size: 18px; /* Tamanho do ícone */
 }
 
+/* Estilo dos botões no menu */
 .button-menu {
-    border: none;
-    background: none;
-    width: 100%;
-    text-align: left;
-    height: 30px;
-    color: #005bab;
-    font-size: 16px;
+    border: none; /* Remove borda */
+    background: none; /* Fundo transparente */
+    width: 100%; /* Largura total */
+    text-align: left; /* Texto alinhado à esquerda */
+    height: 30px; /* Altura fixa */
+    color: #005bab; /* Cor azul */
+    font-size: 16px; /* Tamanho da fonte */
 }
 
+/* Imagem do cabeçalho */
 header img {
-    max-width: 100%;
-    height: auto;
+    max-width: 100%; /* Largura máxima */
+    height: auto; /* Altura ajustada proporcionalmente */
 }
 
+/* Perfil do usuário */
 .perfil {
-    display: flex;
-    align-items: center;
-    text-align: left;
+    display: flex; /* Layout flexível */
+    align-items: center; /* Alinhamento vertical centralizado */
+    text-align: left; /* Texto alinhado à esquerda */
 }
 
+/* Imagem de perfil */
 .perfil img {
-    max-width: 70px;
-    height: auto;
-    margin-right: 10px;
-    border-radius: 100px;
+    max-width: 70px; /* Largura máxima */
+    height: auto; /* Altura proporcional */
+    margin-right: 10px; /* Espaçamento à direita */
+    border-radius: 100px; /* Imagem circular */
 }
 
+/* Nome do perfil */
 .perfil p {
-    font-style: italic;
-    margin: 0;
-    font-size: 30px;
-    color: #005bab;
+    font-style: italic; /* Texto em itálico */
+    margin: 0; /* Remove margens */
+    font-size: 30px; /* Tamanho da fonte */
+    color: #005bab; /* Cor azul */
 }
 
+/* Conteúdo principal */
 .conteudo-principal {
-    z-index: 10;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 6vw 3vw;
-    min-height: 200px;
-    max-height: 340px;
-    background: #575656 url(../img/backgroud1.jpeg) center/cover;
+    z-index: 10; /* Prioridade de exibição */
+    display: flex; /* Layout flexível */
+    flex-direction: column; /* Itens dispostos em coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    padding: 6vw 3vw; /* Espaçamento interno */
+    min-height: 200px; /* Altura mínima */
+    max-height: 340px; /* Altura máxima */
+    background: #575656 url(../img/backgroud1.jpeg) center/cover; /* Fundo com imagem */
 }
 
+/* Apresentação */
 .apresentacao {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-    margin: 0 0 0 -2px;
-    padding: 0;
-    font-size: 40px;
-    line-height: 1em;
-    font-weight: 600;
-    text-align: center;
-    color: #fbfbfb;
+    display: flex; /* Layout flexível */
+    flex-direction: column; /* Itens em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    position: relative; /* Posicionamento relativo */
+    z-index: 1; /* Prioridade de exibição */
+    margin: 0 0 0 -2px; /* Margem esquerda ajustada */
+    font-size: 40px; /* Tamanho da fonte */
+    font-weight: 600; /* Peso da fonte */
+    text-align: center; /* Texto centralizado */
+    color: #fbfbfb; /* Cor branca */
 }
 
+/* Imagem de apresentação */
 .apresentacao img {
-    max-height: 300px;
-    width: auto;
-    border-radius: 100px;
-    z-index: 2;
-    margin-bottom: 10px;
+    max-height: 300px; /* Altura máxima */
+    width: auto; /* Largura proporcional */
+    border-radius: 100px; /* Imagem circular */
+    margin-bottom: 10px; /* Espaçamento inferior */
 }
 
+/* Subtítulos */
 .subtilulo {
-    padding-top: 20px;
-    color: #fbfbfb;
+    padding-top: 20px; /* Espaçamento superior */
+    color: #fbfbfb; /* Cor branca */
 }
 
-.portifolio{
-    width: 100%;
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+/* Portfólio */
+.portifolio {
+    width: 100%; /* Largura total */
+    height: 80vh; /* Altura proporcional à tela */
+    display: flex; /* Layout flexível */
+    flex-direction: column; /* Itens em coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
 }
 
-.portifolio h1{
-    color: white;
-    font-size: 2em;
-    font-weight: bold;
+/* Título do portfólio */
+.portifolio h1 {
+    color: white; /* Cor branca */
+    font-size: 2em; /* Tamanho da fonte */
+    font-weight: bold; /* Fonte em negrito */
 }
 
+/* Projetos */
 .projetos {
-    width: 100%;
-    height: 60vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    padding-bottom: 2vh;
+    width: 100%; /* Largura total */
+    height: 60vh; /* Altura proporcional à tela */
+    display: flex; /* Layout flexível */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 5px; /* Espaçamento entre itens */
+    padding-bottom: 2vh; /* Espaçamento inferior */
 }
 
+/* Botões do carrossel */
 .button-carrossel {
-    width: 2vw;
-    height: 10vh;
-    border-radius: 10px;
-    border: none;
-    font-weight: bold;
-    font-size: 1.3em;
-    cursor: pointer;
+    width: 2vw; /* Largura relativa à tela */
+    height: 10vh; /* Altura relativa à tela */
+    border-radius: 10px; /* Bordas arredondadas */
+    border: none; /* Remove borda */
+    font-weight: bold; /* Fonte em negrito */
+    font-size: 1.3em; /* Tamanho da fonte */
+    cursor: pointer; /* Indicador de botão clicável */
 }
 
+/* Efeito ao passar o mouse no botão */
 .button-carrossel:hover {
-    transform: scale(1.05);
-
+    transform: scale(1.05); /* Aumenta levemente */
 }
 
+/* Efeito ao clicar no botão */
 .button-carrossel:active {
-    transform: scale(1.10);
-    color: #ffffff;
-    background-color: #acacac;
-
+    transform: scale(1.10); /* Aumenta mais */
+    color: #ffffff; /* Cor branca */
+    background-color: #acacac; /* Cor cinza */
 }
 
+/* Carrossel */
 .nav-posters {
-    width: 70%;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    align-items: center;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 70%; /* Largura relativa */
+    height: 50vh; /* Altura relativa */
+    display: flex; /* Layout flexível */
+    justify-content: center; /* Centraliza horizontalmente */
+    overflow: hidden; /* Oculta itens excedentes */
+    align-items: center; /* Centraliza verticalmente */
+    background-color: #ffffff; /* Fundo branco */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
+/* Lista do carrossel */
 .nav-posters ul {
-    display: flex;
-    list-style: none;
-    transition: transform 0.5s ease-in-out;
+    display: flex; /* Layout flexível */
+    list-style: none; /* Remove estilo de lista */
+    transition: transform 0.5s ease-in-out; /* Animação ao mover */
     margin: 0;
     padding: 0;
 }
 
+/* Itens do carrossel */
 .nav-posters li {
-    flex: 0 0 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    flex: 0 0 100%; /* Cada item ocupa 100% da largura */
+    display: flex; /* Layout flexível */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
 }
 
-
+/* Estilo dos itens no carrossel */
 .posters {
-    display: flex;
-    flex-direction: row;
-    width: 60vw;
-    height: 400px;
-    background-color: white;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
-    color: black;
-    transition: transform 0.3s ease;
-    text-align: center;
-    text-decoration: none;
-    justify-content: center;
-    
+    display: flex; /* Layout flexível */
+    flex-direction: row; /* Itens em linha */
+    width: 60vw; /* Largura relativa */
+    height: 400px; /* Altura fixa */
+    background-color: white; /* Fundo branco */
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); /* Sombra mais escura */
+    color: black; /* Texto preto */
+    transition: transform 0.3s ease; /* Transição suave */
+    text-align: center; /* Texto centralizado */
+    text-decoration: none; /* Remove sublinhado */
+    justify-content: center; /* Centraliza horizontalmente */
 }
 
+/* Estilo do conteúdo dos posters */
 .conteudo-posters {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    padding: 2%;
-
+    display: flex; /* Utiliza layout flexível */
+    flex: 1; /* Faz o elemento crescer para ocupar o espaço disponível */
+    flex-direction: column; /* Alinha os itens em coluna */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    width: 50%; /* Define a largura como 50% */
+    padding: 2%; /* Adiciona espaçamento interno */
 }
 
-
+/* Título dentro do conteúdo dos posters */
 .conteudo-posters h3 {
-    margin: 15px;
-    font-size: 1.2em;
-    color: #005bab;
-    max-width: 100%;
+    margin: 15px; /* Espaçamento externo */
+    font-size: 1.2em; /* Tamanho da fonte */
+    color: #005bab; /* Cor azul */
+    max-width: 100%; /* Limita a largura máxima */
 }
 
+/* Parágrafo dentro do conteúdo dos posters */
 .conteudo-posters p {
-    margin: 15px;
-    font-size: 1em;
-    line-height: 1.4;
-    color: #333333;
-    max-width: 100%;
+    margin: 15px; /* Espaçamento externo */
+    font-size: 1em; /* Tamanho da fonte */
+    line-height: 1.4; /* Altura da linha */
+    color: #333333; /* Cor cinza escuro */
+    max-width: 100%; /* Limita a largura máxima */
 }
 
+/* Imagem do poster */
 .img-poster {
-    flex: 1;
-    height: 100%;
-    max-width: 50%;
-    object-fit: cover;
+    flex: 1; /* Faz o elemento crescer para ocupar o espaço disponível */
+    height: 100%; /* Define a altura como 100% */
+    max-width: 50%; /* Define a largura máxima como 50% */
+    object-fit: cover; /* Ajusta a imagem para cobrir o espaço */
 }
 
+/* Efeito ao passar o mouse nos posters */
 .posters:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Aumenta levemente o tamanho */
 }
 
-
-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    bottom: 0;
-    left: 0;
-    height: 5vh;
-    background-color: #888888;
-    color: #005bab;
+/* Rodapé */
+footer {
+    display: flex; /* Utiliza layout flexível */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    bottom: 0; /* Posiciona no rodapé */
+    left: 0; /* Alinha à esquerda */
+    height: 5vh; /* Define altura proporcional à tela */
+    background-color: #888888; /* Cor de fundo cinza médio */
+    color: #005bab; /* Cor do texto azul */
 }
 
+/* Ícone do menu */
 .menu-icon {
-    display: none;
-    font-size: 2rem;
-    color: #005bab;
-    cursor: pointer;
+    display: none; /* Esconde o ícone por padrão */
+    font-size: 2rem; /* Define o tamanho do ícone */
+    color: #005bab; /* Cor azul */
+    cursor: pointer; /* Define o ponteiro como clicável */
 }
 
+/* Estilo do menu de navegação */
 .menu-nav {
-    display: flex;
-    justify-content: end;
+    display: flex; /* Utiliza layout flexível */
+    justify-content: end; /* Alinha o conteúdo à direita */
 }
 
+/* Checkbox para controlar a exibição do menu */
 #menu-toggle {
-    display: none;
+    display: none; /* Esconde o checkbox */
 }
 
+/* Estilo do menu quando o checkbox está marcado */
 #menu-toggle:checked ~ .menu-nav {
-    display: flex;
-    flex-direction: column;
-    background-color: #ffffff;
-    position: absolute;
-    top: 100px;
-    right: 0;
-    width: 100%;
-    z-index: 100;
+    display: flex; /* Exibe o menu */
+    flex-direction: column; /* Itens dispostos em coluna */
+    background-color: #ffffff; /* Fundo branco */
+    position: absolute; /* Posição absoluta para sobrepor outros elementos */
+    top: 100px; /* Distância do topo */
+    right: 0; /* Alinha à direita */
+    width: 100%; /* Largura total */
+    z-index: 100; /* Prioridade de exibição */
 }
 
+/* Estilo da lista de navegação no menu */
 .menu-nav ul {
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-    padding: 0;
+    flex-direction: column; /* Itens dispostos em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    margin: 0; /* Remove margens externas */
+    padding: 0; /* Remove margens internas */
 }
 
+/* Itens da lista no menu */
 .menu-nav ul li {
-    margin: 10px 0;
+    margin: 10px 0; /* Espaçamento entre itens */
 }
 
-
+/* Responsividade para telas menores */
 @media (max-width: 1100px) {
     .menu-icon {
-        display: block;
+        display: block; /* Exibe o ícone do menu */
     }
 
     .menu-nav {
-        display: none;
+        display: none; /* Esconde o menu por padrão */
     }
 
     #menu-toggle:checked ~ .menu-nav {
-        display: flex;
-    }
-
-    .menu-nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .menu-nav ul li {
-        margin: 10px 0;
+        display: flex; /* Exibe o menu ao marcar o checkbox */
     }
 
     .perfil {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+        flex-direction: column; /* Alinha itens em coluna */
+        align-items: center; /* Centraliza horizontalmente */
+        text-align: center; /* Centraliza o texto */
     }
 
     .perfil img {
-        max-width: 50px;
+        max-width: 50px; /* Reduz o tamanho da imagem */
     }
 
     .perfil p {
-        font-size: 24px;
+        font-size: 24px; /* Reduz o tamanho da fonte */
     }
 
     footer {
-        font-size: 14px;
-        padding: 10px;
+        font-size: 14px; /* Reduz o tamanho da fonte */
+        padding: 10px; /* Adiciona espaçamento interno */
     }
-
 }
 
+/* Responsividade para telas menores que 728px */
 @media (max-width: 728px) {
     .apresentacao {
-        font-size: 28px;
+        font-size: 28px; /* Reduz o tamanho da fonte */
     }
 
     .subtilulo {
-        font-size: 0.9rem;
+        font-size: 0.9rem; /* Reduz o tamanho da fonte */
     }
 
-
     .posters {
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        width: 80vw;
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: center; /* Centraliza verticalmente */
+        flex-direction: column; /* Alinha itens em coluna */
+        width: 80vw; /* Reduz a largura */
     }
 
     footer {
-        font-size: 12px;
-        padding: 8px;
-        line-height: 1.5;
+        font-size: 12px; /* Reduz o tamanho da fonte */
+        padding: 8px; /* Adiciona espaçamento interno */
+        line-height: 1.5; /* Ajusta altura da linha */
     }
 }
 
+/* Responsividade para telas menores que 480px */
 @media (max-width: 480px) {
     .perfil img {
-        max-width: 40px;
+        max-width: 40px; /* Reduz ainda mais o tamanho da imagem */
     }
 
     .perfil p {
-        font-size: 20px;
+        font-size: 20px; /* Reduz o tamanho da fonte */
     }
 
     .menu-icon {
-        font-size: 1.8rem;
+        font-size: 1.8rem; /* Reduz o tamanho do ícone */
     }
 
     .apresentacao {
-        font-size: 22px;
+        font-size: 22px; /* Reduz o tamanho da fonte */
     }
 
     .subtilulo {
-        font-size: 0.8rem;
+        font-size: 0.8rem; /* Reduz o tamanho da fonte */
     }
 
-
     footer {
-        font-size: 10px;
-        padding: 5px;
+        font-size: 10px; /* Reduz o tamanho da fonte */
+        padding: 5px; /* Adiciona menos espaçamento interno */
     }
 }

@@ -1,31 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 -->
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Define que a página será responsiva -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- Melhora a compatibilidade com navegadores mais antigos -->
+
+    <!-- Importa a biblioteca de ícones Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Link para o arquivo de estilos CSS -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Título da página -->
     <title>Jorge Afonso - Portifolio</title>
 </head>
 <body>
 <main>
 
+    <!-- Cabeçalho com barra de menu -->
     <header class="menubar">
+        <!-- Seção do perfil -->
         <nav class="perfil">
-            <img src="img/fotoperfil.jpeg" alt="Imagem Logo">
-            <p class="nome">Jorge Afonso</p>
+            <img src="img/fotoperfil.jpeg" alt="Imagem Logo"> <!-- Foto de perfil -->
+            <p class="nome">Jorge Afonso</p> <!-- Nome do usuário -->
         </nav>
 
-        <input type="checkbox" id="menu-toggle">
+        <!-- Controle do menu mobile -->
+        <input type="checkbox" id="menu-toggle"> <!-- Checkbox para controlar o menu -->
         <label for="menu-toggle" class="menu-icon">
-            <i class="fas fa-bars"></i>
+            <i class="fas fa-bars"></i> <!-- Ícone de menu (hambúrguer) -->
         </label>
 
+        <!-- Menu de navegação -->
         <nav class="menu-nav">
             <ul>
-                <li><a href="">
+                <!-- Links para seções ou redes sociais -->
+                <li><a href="#projetos">
                     <button class="button-menu"><i class="fas fa-project-diagram"></i> PROJETOS</button>
                 </a></li>
                 <li><a href="https://github.com/MOR4Xx" target="_blank">
@@ -37,82 +50,89 @@
                 <li><a href="https://www.instagram.com/jorgearaujo_r/?hl=pt-br" target="_blank">
                     <button class="button-menu"><i class="fab fa-instagram"></i> INSTAGRAM</button>
                 </a></li>
-                <li><a href="">
+                <li><a href="https://mor4xx.github.io/Pagina-Pessoal-Web/">
                     <button class="button-menu"><i class="fa-solid fa-user"></i> SOBRE</button>
                 </a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Seção principal do conteúdo -->
     <section class="conteudo-principal">
-    <span class="apresentacao">
-        <img src="img/fotoperfil.jpeg">
-        Hi, eu sou Jorge Afonso
-    </span>
-        <h3 class="subtilulo"> Estudade de Sistemas de Informação no Instituto Federal Goiano, atualmente no 4°
-            periodo.</h3>
-        <h3 class="subtilulo"> Tecnico em Redes de Computadores.</h3>
+        <span class="apresentacao">
+            <img src="img/fotoperfil.jpeg"> <!-- Imagem do perfil -->
+            Hi, eu sou Jorge Afonso
+        </span>
+        <h3 class="subtilulo"> Estudante de Sistemas de Informação no Instituto Federal Goiano, atualmente no 4°
+            período.</h3>
+        <h3 class="subtilulo"> Técnico em Redes de Computadores.</h3>
     </section>
-    <section class="portifolio">
-        <h1>Meus Projetos</h1>
+
+    <!-- Seção de portfólio -->
+    <section class="portifolio" id="projetos">
+        <h1>Meus Projetos</h1> <!-- Título da seção -->
         <div class="projetos">
-            <button id="button-ant" class="button-carrossel"><</button>
+            <button id="button-ant" class="button-carrossel"><</button> <!-- Botão para navegar para o item anterior -->
+
+            <!-- Carrossel de projetos -->
             <nav class="nav-posters">
                 <ul>
+                    <!-- Cada projeto é um item da lista -->
                     <li><a href="" class="posters">
-                        <img class="img-poster" src="img/projetoestufa.jpg" alt="Poster 1">
+                        <img class="img-poster" src="img/projetoestufa.jpg" alt="Poster 1"> <!-- Imagem do projeto -->
                         <div class="conteudo-posters">
                             <h3>Irrigação e controle de estufas usando Raspberry Pi 4</h3>
-                            <p>Projeto que visa automatizar a coleta de dados de uma estufas, usando tecnologias de
-                                baixo
-                                custo, melhorando a eficiencia hidrica.</p>
+                            <p>Projeto que visa automatizar a coleta de dados de uma estufa, usando tecnologias de baixo custo, melhorando a eficiência hídrica.</p>
                         </div>
                     </a></li>
                     <li><a href="https://mor4xx.github.io/Pagina-Pessoal-Web/" class="posters">
                         <img class="img-poster" src="img/Imagem-pagina-pessoal.jpg" alt="Poster 2">
                         <div class="conteudo-posters">
                             <h3>Pagina Pessoal</h3>
-                            <p>Projeto de uma pagina pessoal web.</p>
+                            <p>Projeto de uma página pessoal web.</p>
                         </div>
                     </a></li>
                     <li><a href="https://mor4xx.github.io/E-commerce/" class="posters">
-                        <img class="img-poster" src="img/Imagem-InfoNoobs.jpg" alt="Poster 2">
+                        <img class="img-poster" src="img/Imagem-InfoNoobs.jpg" alt="Poster 3">
                         <div class="conteudo-posters">
                             <h3>E-comerce</h3>
-                            <p>Projeto de uma pagina de vendas virtual.</p>
+                            <p>Projeto de uma página de vendas virtual.</p>
                         </div>
                     </a></li>
                     <li><a href="https://mor4xx.github.io/Jogo-Cobrinha-Web/" class="posters">
-                        <img class="img-poster" src="img/Imagem-snake-game.jpg" alt="Poster 2">
+                        <img class="img-poster" src="img/Imagem-snake-game.jpg" alt="Poster 4">
                         <div class="conteudo-posters">
                             <h3>Snake game</h3>
-                            <p>Projeto de um jogo da cobrinha em javascript.</p>
+                            <p>Projeto de um jogo da cobrinha em JavaScript.</p>
                         </div>
                     </a></li>
                     <li><a href="https://mor4xx.github.io/Calculadora-Web/" class="posters">
-                        <img class="img-poster" src="img/imagem-calculadora.jpg" alt="Poster 2">
+                        <img class="img-poster" src="img/imagem-calculadora.jpg" alt="Poster 5">
                         <div class="conteudo-posters">
                             <h3>Calculadora</h3>
-                            <p>Projeto calculadora web com javascript usando expressão infixa e posfixa.</p>
+                            <p>Projeto de uma calculadora web com JavaScript usando expressão infixa e pós-fixa.</p>
                         </div>
                     </a></li>
                     <li><a href="https://mor4xx.github.io/Pagina-Eventos/" class="posters">
-                        <img class="img-poster" src="img/Imagem-pagina-formatura.jpg" alt="Poster 2">
+                        <img class="img-poster" src="img/Imagem-pagina-formatura.jpg" alt="Poster 6">
                         <div class="conteudo-posters">
-                            <h3>Pagina de eventos</h3>
-                            <p>Projeto de uma pagina de eventos de formaturas.</p>
+                            <h3>Página de eventos</h3>
+                            <p>Projeto de uma página de eventos de formaturas.</p>
                         </div>
                     </a></li>
                 </ul>
             </nav>
-            <button id="button-prox" class="button-carrossel">></button>
+
+            <button id="button-prox" class="button-carrossel">></button> <!-- Botão para navegar para o próximo item -->
         </div>
     </section>
 
+    <!-- Rodapé -->
     <footer>
-        <p>© Jorge Afonso 2024</p>
+        <p>© Jorge Afonso 2024</p> <!-- Copyright -->
     </footer>
 
+    <!-- Script externo -->
     <script src="js/app.js"></script>
 </main>
 </body>
